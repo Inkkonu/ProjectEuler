@@ -1,4 +1,5 @@
 # Solution for https://projecteuler.net/problem=1
+
 import time
 
 
