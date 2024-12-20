@@ -1,11 +1,10 @@
 # Solution for https://projecteuler.net/problem=11
 
 import time
-import os
 
 
 def solve():
-    with open('Problem0011_input.txt', 'r') as f:
+    with open('./Inputs/Problem0011_input.txt', 'r') as f:
         data = [list(map(int, line.strip().split())) for line in f.readlines()]
     greatestProduct = -1
     for i in range(len(data)-3):
@@ -29,7 +28,6 @@ def solve():
 
 
 if __name__ == "__main__":
-    os.chdir("./Solutions")
     start = time.time()
     print(solve())  # 70600674
     print(f'Time taken : {time.time() - start}s')  # 405.31 μs
