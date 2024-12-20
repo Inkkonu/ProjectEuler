@@ -1,4 +1,4 @@
-# Solution for https://projecteuler.net/problem=9
+# Solution for https://projecteuler.net/problem=10
 
 import time
 from Utilities import isPrime
