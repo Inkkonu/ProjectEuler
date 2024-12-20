@@ -8,6 +8,7 @@ def solve():
     return getNumberOfPaths(0, 0, 20)
 
 
+@cache
 def getNumberOfPaths(x: int, y: int, gridSize: int) -> int:
     if x == gridSize and y == gridSize:
         return 1
