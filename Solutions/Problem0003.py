@@ -1,6 +1,7 @@
 # Solution for https://projecteuler.net/problem=3
 
 import time
+from Utilities import isPrime
 
 
 def solve():
@@ -10,15 +11,6 @@ def solve():
             n % i == 0 and isPrime(i)) else largestPrimeFactor
         i += 1
     return largestPrimeFactor
-
-
-def isPrime(n: int):
-    i = 2
-    while i * i <= n:
-        if n % i == 0:
-            return False
-        i += 1
-    return True
 
 
 if __name__ == "__main__":

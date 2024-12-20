@@ -2,6 +2,7 @@
 
 import time
 from itertools import count
+from Utilities import isPrime
 
 
 def solve():
@@ -11,15 +12,6 @@ def solve():
             counter += 1
             if counter == 10_001:
                 return i
-
-
-def isPrime(n: int):
-    i = 2
-    while i * i <= n:
-        if n % i == 0:
-            return False
-        i += 1
-    return True
 
 
 if __name__ == "__main__":
